@@ -35,28 +35,26 @@ body {
 
 /* index.php */
 #content {
-	clear: left;
-	margin-top: 16px;
-}
+		clear: left;
+			margin-top: 16px;
+		}
 
 #content-left {
-	float: left;
-	width:33%;
-	margin-left: 3.5%;
-}
+		float: left;
+			width: 31%;
+		}
 
 #content-middle {
-	float: left;
-	width:33%;
-	margin-left: 3.5%;
-}
+		float: left;
+			width: 31%;
+				margin-left: 3.5%;
+			}
 
 #content-right {
-	float: left;
-	width:33%;
-	margin-left: 3.5%;
-}
-
+		float: left;
+			width: 31%;
+				margin-left: 3.5%;
+			}
 /* include/nav.php */
 nav {
 		margin-top: 16px;
