@@ -25,7 +25,7 @@ padding: 2px 16px;
 }
 
 body {
-	width: 100%;
+	width: 95%;
 	margin: 0 auto;
 	background-color: #fffff8;
 	font-family: "Archivo Narrow";
@@ -33,6 +33,11 @@ body {
 	text-decoration: none;
 }
 
+#content{
+	word-wrap: break-word;
+}
+
+@media only screen and (min-width : 600px){
 /* index.php */
 #content {
 		clear: left;
@@ -55,6 +60,7 @@ body {
 			width: 31%;
 				margin-left: 3.5%;
 			}
+}
 /* include/nav.php */
 nav {
 		margin-top: 16px;
