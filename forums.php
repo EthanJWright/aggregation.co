@@ -6,19 +6,19 @@ require("include/rss_util.php");
 echo "<div id=\"content\">\n";
 echo "<div id=\"content-left\">\n";
 
-$query = "SELECT items.id AS id,feedTitle,feedLink,itemTitle,itemPubDate,itemImage,itemLink,itemDesc FROM feeds,items WHERE feeds.displayColumn=1 AND feeds.id=items.id";
+$query = "SELECT forums.id AS id,feedTitle,feedLink,itemTitle,itemPubDate,itemImage,itemLink,itemDesc FROM feeds,forums WHERE feeds.displayColumn=1 AND feeds.id=forums.id";
 DisplayColumn($db, $query);
 
 echo "</div>\n";
 echo "<div id=\"content-middle\">\n";
 
-$query = "SELECT items.id AS id,feedTitle,feedLink,itemTitle,itemPubDate,itemImage,itemLink,itemDesc FROM feeds,items WHERE feeds.displayColumn=2 AND feeds.id=items.id";
+$query = "SELECT forums.id AS id,feedTitle,feedLink,itemTitle,itemPubDate,itemImage,itemLink,itemDesc FROM feeds,forums WHERE feeds.displayColumn=2 AND feeds.id=forums.id";
 DisplayColumn($db, $query);
 
 echo "</div>\n";
 echo "<div id=\"content-right\">\n";
 
-$query = "SELECT items.id AS id,feedTitle,feedLink,itemTitle,itemPubDate,itemImage,itemLink,itemDesc FROM feeds,items WHERE feeds.displayColumn=3 AND feeds.id=items.id";
+$query = "SELECT forums.id AS id,feedTitle,feedLink,itemTitle,itemPubDate,itemImage,itemLink,itemDesc FROM feeds,forums WHERE feeds.displayColumn=3 AND feeds.id=forums.id";
 DisplayColumn($db, $query);
 
 echo "</div>\n";
@@ -103,10 +103,8 @@ function DisplayItem($prev, $item)
   <div class="container">
     <h4><b>$title</b></h4>
     <p class="wrap">$description</p>
-    <div> 
       <p class="date">$date</p>
       <img float:left; src="$imgurl" alt="" width="20" height="20">
-    </div>
   </div>
 </div> 
 EOT;

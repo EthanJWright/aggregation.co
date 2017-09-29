@@ -2,6 +2,28 @@
 	body { max-width: 640px; }
 }
 
+.logo{
+	position: absolute;
+	right: 50%;
+}
+
+.wrap{
+
+}
+
+.card {
+box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+transition: 0.3s;
+}
+
+.card:hover {
+box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container {
+padding: 2px 16px;
+}
+
 body {
 	width: 100%;
 	margin: 0 auto;
@@ -9,16 +31,6 @@ body {
 	font-family: "Archivo Narrow";
 	font-size: 11pt;
 	text-decoration: none;
-}
-
-/* include/nav.php */
-nav {
-	margin-top: 16px;
-	font-size: larger;
-}
-
-nav span {
-	margin-right: 24px;
 }
 
 /* index.php */
@@ -29,91 +41,29 @@ nav span {
 
 #content-left {
 	float: left;
-	width: 31%;
+	width:33%;
+	margin-left: 3.5%;
 }
 
 #content-middle {
 	float: left;
-	width: 31%;
+	width:33%;
 	margin-left: 3.5%;
 }
 
 #content-right {
 	float: left;
-	width: 31%;
+	width:33%;
 	margin-left: 3.5%;
 }
 
-.itemSep {
-	border-top: solid thin #c0c0c0;
-}
+/* include/nav.php */
+nav {
+		margin-top: 16px;
+			font-size: larger;
+		}
 
-.feedIcon {
-	float: left;
-	margin-top: 4px;
-}
+		nav span {
+				margin-right: 24px;
+			}
 
-.feedTitle {
-	float: left;
-	margin-top: 4px;
-	margin-left: 4px;
-	font-size: smaller;
-	font-style: italic;
-	font-weight: normal;
-}
-
-.itemPubDate {
-	float: right;
-	margin-top: 4px;
-	margin-left: 8px;
-	font-size: smaller;
-	font-style: normal;
-	font-weight: normal;
-	color: #317023;
-}
-
-.itemTitle {
-	clear: left;
-	margin-top: 16px;
-	font-style: normal;
-	font-weight: bold;
-}
-
-.itemDesc {
-	clear: left;
-	margin-bottom: 16px;
-	font-family: "Times";
-	font-style: normal;
-	font-weight: normal;
-	text-align: justify;
-	text-indent: 24px;
-}
-
-/* feeds.php */
-.feedsListIcon {
-	float: left;
-	margin-top: 12px;
-}
-
-.feedsListTitle {
-	float: left;
-	margin-top: 12px;
-	margin-left: 4px;
-	font-size: smaller;
-	font-style: normal;
-	font-weight: bold;
-}
-
-.feedsListLink {
-	clear: left;
-	font-size: smaller;
-	font-style: normal;
-	font-weight: normal;
-}
-
-/* help.php */
-.help {
-	margin-top: 12px;
-	font-size: smaller;
-	text-align: justify;
-}

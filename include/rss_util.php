@@ -1,5 +1,4 @@
 <?php
-
 /*
  * Returns the string with various external links, images, iframes, and
  * the last "Read more..." paragraph removed
@@ -98,7 +97,8 @@ function LoadCachedItems($items)
 		$feedTitle = $row['feedTitle'];
 		$feedLink = $row['feedLink'];
 		$itemTitle = $row['itemTitle'];
-		$itemPubDate = $row['itemPubDate'];
+        $itemPubDate = $row['itemPubDate'];
+        $itemImage = $row['itemImage'];
 		$itemLink = $row['itemLink'];
 		$itemDesc = $row['itemDesc'];
 
@@ -107,7 +107,8 @@ function LoadCachedItems($items)
 			"feedTitle" => $feedTitle,
 			"feedLink" => $feedLink,
 			"itemTitle" => $itemTitle,
-			"itemPubDate" => $itemPubDate,
+            "itemPubDate" => $itemPubDate,
+            "itemImage" => $itemImage,
 			"itemLink" => $itemLink,
 			"itemDesc" => $itemDesc);
 

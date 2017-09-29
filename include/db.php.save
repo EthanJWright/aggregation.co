@@ -23,16 +23,16 @@ function RealEscapeString($db, $escapestr)
  */
 
 /* $username = "root"; */
-$username = "agr";
+$username = "cms";
 
 /*$password = ""; */
-$password = "agrpassword";
+$password = "Abby2008";
 
 /* $host = "localhost"; */
 //$host = "209.17.116.156";
-$host = "localhost";
+$host = "205.178.137.139";
 
-$dbname = "aggregation";
+$dbname = "cornfedcms";
 
 $options = array(PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8');
 
@@ -64,4 +64,4 @@ if(function_exists('get_magic_quotes_gpc') && get_magic_quotes_gpc()) {
 /*
 header('Content-Type: text/html; charset=utf-8');
 session_start();
- */
+*/
